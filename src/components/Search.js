@@ -1,4 +1,7 @@
  import React, {useState} from 'react';
+ import styled from 'styled-components';
+ import lupa from './img/lupa.svg';
+ import './styles/Search.css'
 
 const Search = (props) => {
 
@@ -60,11 +63,13 @@ const Search = (props) => {
     return ( 
 
         <div>
-            <input type="text" placeholder="Enter Pokemon" onKeyPress={handleKeyPress} />
-            <button onClick={() => fetchData(), () => fetchData2()}>buscar</button>
+            <div className='divInput'>
+                <input type="text" placeholder="Enter Pokemon" onKeyPress={handleKeyPress} size="2em" className="border-0" />
+                <img src={lupa} className='lupa' />
+            </div>
         </div>
 
      );
 }
- 
+
 export default Search;

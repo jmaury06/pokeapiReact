@@ -1,0 +1,55 @@
+
+input{
+  position: inherit;
+  height: 70px;
+  width: 400px;
+  left: 495px;
+  top: 213px;
+  border-radius: 0px;
+
+  margin: auto;
+
+  outline: none;
+  border: 0;
+}
+
+input:focus{
+  border: none;
+}
+
+.divInput{
+  position: inherit;
+  height: 72px;
+  width: 450px;
+  left: 495px;
+  top: 213px;
+  border-radius: 0px;
+
+  margin: auto; 
+  border: 1px solid;
+}
+
+.lupa{
+  position: static;
+  width: 20px;
+  height: 20px;
+  color: gray;
+}
+
+/* div::before{
+  content: '';
+}
+
+div::after{
+
+  content: '';
+  background-image: url(../img/lupa.svg);
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  width: 20px;
+  height: 20px;
+
+} */
