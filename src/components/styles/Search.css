@@ -11,6 +11,7 @@ input{
 
   outline: none;
   border: 0;
+
 }
 
 input:focus{
@@ -35,21 +36,3 @@ input:focus{
   height: 20px;
   color: gray;
 }
-
-/* div::before{
-  content: '';
-}
-
-div::after{
-
-  content: '';
-  background-image: url(../img/lupa.svg);
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  width: 20px;
-  height: 20px;
-
-} */

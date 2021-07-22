@@ -1,26 +1,36 @@
 
 .background{
-	position: relative;
-	height: 900px;
-	margin: auto;
+	background: url(../img/background.png)no-repeat center center fixed; 
+	background-size: cover;
+	width: 100%;
+	height: 935px;
 
-	background-image: url(../img/background.png);
-	background-repeat: no-repeat;
-  background-size: 100%;
+	display: flex;
+
 }
 
 .whiteBox{
 	display: block;
-  margin: 4% auto;
+ 	margin: auto;
 
 	background-color: white;
 	width: 50%;
-	box-shadow: 0px 0px 20px rgba(48, 48, 48, 0.7);
+	box-shadow: 0px 0px 10px rgba(48, 48, 48, 0.7);
 }
 
 .Title{
+	margin-top: 20px;
 	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
 }
+
+.imageName{
+	display: flex;
+	justify-content: center;
+}
+
+
 
 .Container1{
 	margin: 20px;
@@ -28,74 +38,37 @@
 
 .Container2{
 	display: flex;
-	background-color: DodgerBlue;
 }
 
 .subContainer1{
 	display: flex;
-	background-color: rgb(49, 187, 127);
-	align-content: flex-start;
-	flex-basis: 80%;
-	display: flex;
 	flex-direction: column;
+	align-content: flex-start;
+	flex-basis: 70%;
+
 }
 
 .subContainer2{
 	display: flex;
-	background-color: rgb(199, 30, 255);
-	align-content: flex-end;
 	flex-basis: 20%;
-	align-items: stretch;
-}
-
-.Stats{
-	display: flex;
-	background-color: rgb(252, 1, 168);
-	flex-basis: 50%;
 	flex-direction: column;
+	align-content: flex-end;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* 
-.flex-container{
+.containerZ{
 	display: flex;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-
-
-
-.Types{
-	
-}
-
-.Legend{
-	text-align: justify;
+	flex-flow: row wrap;
 }
 
 .Stats{
-	
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
 }
 
 .Value{
-	
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	justify-content: flex-end;
 }
-
-li{
-	margin: 0;
-	list-style: none;
-} */

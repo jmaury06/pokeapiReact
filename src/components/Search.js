@@ -1,7 +1,7 @@
  import React, {useState} from 'react';
  import styled from 'styled-components';
  import lupa from './img/lupa.svg';
- import './styles/Search.css'
+ import './styles/Search.css';
 
 const Search = (props) => {
 
@@ -64,7 +64,7 @@ const Search = (props) => {
 
         <div>
             <div className='divInput'>
-                <input type="text" placeholder="Enter Pokemon" onKeyPress={handleKeyPress} size="2em" className="border-0" />
+                <input type="text" placeholder="Enter Pokemon" onKeyPress={handleKeyPress} />
                 <img src={lupa} className='lupa' />
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/About.css';
 
 const About = (props) => {
 
@@ -10,7 +11,7 @@ const About = (props) => {
 
         <div>
             <h3>About</h3>
-            <p>{props.legend}</p>
+            <p className='Legend'>{props.legend}</p>
         </div>
      );
 }
