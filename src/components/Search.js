@@ -7,46 +7,39 @@ const Search = (props) => {
 
     const fetchData = async() => {
 
-        const namePokemon = document.querySelector('input').value
+        const namePokemonInput = document.querySelector('input').value
+        const namePokemon = namePokemonInput.toLowerCase()
 
         try {
-            const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${namePokemon}`)
+            const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${namePokemon}/`)
             const data = await res.json()
 
             const pokeImage = data.sprites.other.dream_world.front_default
             const pokeName = data.name
             const pokeNumber = data.id
-            const pokeElement = data.types[0].type.name
+            const pokeElement1 = data.types[0].type.name
+            const pokeElement2 = data.types[1].type.name
             const pokeStatsHp = data.stats[0].base_stat
             const pokeStatsAtk = data.stats[1].base_stat
             const pokeStatsDef = data.stats[2].base_stat
+
+            console.log(pokeNumber);
+
+            const res2 = await fetch(`https://pokeapi.co/api/v2/ability/${pokeNumber}`)
+            const data2 = await res2.json()
+
+            const pokeLegend = data2.effect_entries[1].effect
             
             props.setImagen(pokeImage)
             props.setName(pokeName)
             props.setNumber(pokeNumber)
-            props.setElement(pokeElement)
+            props.setElement1(pokeElement1)
+            props.setElement2(pokeElement2)
             props.setStatsHp(pokeStatsHp)
             props.setStatsAtk(pokeStatsAtk)
             props.setStatsDef(pokeStatsDef)
 
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    const fetchData2 = async() => {
-
-        const Pokemon = document.querySelector('input').value
-
-        try {
-            
-            const res2 = await fetch(`https://pokeapi.co/api/v2/ability/${Pokemon}`)
-            const data2 = await res2.json()
-
-            const pokeLegend = data2.effect_entries[1].effect
-
             props.setLegend(pokeLegend)
-
 
         } catch (error) {
             console.log(error);
@@ -56,7 +49,7 @@ const Search = (props) => {
     const handleKeyPress = (event) => {
         if(event.key === 'Enter'){
           fetchData();
-          fetchData2();
+          
         }
     }
 

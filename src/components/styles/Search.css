@@ -1,16 +1,25 @@
 
+.divInput{
+  display: flex;
+  height: 54px;
+  width: 448px;
+  justify-content: space-between;
+  margin: 0px auto;
+  border: 1px solid;
+  border-color: #b8b8b8;
+}
+
 input{
-  position: inherit;
-  height: 70px;
+  height: 50px;
   width: 400px;
-  left: 495px;
-  top: 213px;
-  border-radius: 0px;
-
-  margin: auto;
-
+  border: none;
   outline: none;
-  border: 0;
+  margin-left: 16px;;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #797979;
 
 }
 
@@ -18,21 +27,8 @@ input:focus{
   border: none;
 }
 
-.divInput{
-  position: inherit;
-  height: 72px;
-  width: 450px;
-  left: 495px;
-  top: 213px;
-  border-radius: 0px;
-
-  margin: auto; 
-  border: 1px solid;
-}
-
 .lupa{
-  position: static;
+  margin-right: 5px;
   width: 20px;
-  height: 20px;
-  color: gray;
+  opacity: 0.5;
 }
