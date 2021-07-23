@@ -1,0 +1,65 @@
+.Container2{
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.subContainer1{
+	align-content: flex-start;
+	flex-basis: 70%;
+}
+
+.Element{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+.subContainer2{
+	flex-basis: 30%;
+	flex-direction: column;
+}
+
+.containerZ{
+	display: flex;
+}
+
+.Stats{
+	flex: 0.5;
+	flex-basis: 80%;
+}
+
+.Value{
+	flex: 0.5;
+	flex-basis: 20%;
+	text-align: end;
+}
+
+p{
+	margin: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+
+
+h3{
+	margin: 1px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	
+}
+
+h4{
+	margin: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+}

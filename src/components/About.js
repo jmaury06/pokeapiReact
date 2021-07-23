@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/About.css';
 
-const About = (props) => {
+const About = (xxx) => {
 
 
 
@@ -11,7 +11,7 @@ const About = (props) => {
 
         <div className='divLegend'>
             <div><h2>About</h2></div>
-            <p className='Legend'>{props.legend}</p>
+            <p className='Legend'>{xxx.legend}</p>
         </div>
      );
 }

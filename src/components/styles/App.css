@@ -2,36 +2,20 @@
 .background{
 	background: url(../img/background.png)no-repeat center center fixed; 
 	background-size: cover;
-
 	width: 100%;
 	height: 935px;
-
 	display: flex;
-
 	color: #414141;
-
 	flex-direction: column;
-
 }
 
 .whiteBox{
 	display: block;
  	margin: auto;
-
 	Width: 765px;
-	Height: 719px;
-
+	Height: auto;
 	background-color: white;
 	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.footer{
-	justify-content: center;
-	margin: auto;
-	margin-top: 104px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	
 }
 
 .Title{
@@ -43,77 +27,14 @@
 	font-style: normal;
 }
 
-.imageName{
-	display: flex;
-	justify-content: center;
-}
-
 .Container1{
 	margin: 10px;
 }
 
-.Container2{
-	display: none;
-	margin-top: 20px;
-	justify-content: space-between;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.subContainer1{
-	align-content: flex-start;
-	flex-basis: 70%;
-}
-
-.Element{
+.footer{
+	justify-content: center;
+	margin: auto;
+	margin-top: 104px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 }
-
-.subContainer2{
-	flex-basis: 30%;
-	flex-direction: column;
-}
-
-.containerZ{
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.Stats{
-	flex-basis: 50%;
-}
-
-.Value{
-	flex-basis: 50%;
-	text-align: end;
-}
-
-div p{
-	margin: 1px;
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	text-transform: capitalize;
-}
-
-
-
-div h3{
-	margin: 1px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: bold;
-	
-}
-
-div h4{
-	margin: 1px;
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-}
-
