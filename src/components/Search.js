@@ -1,4 +1,4 @@
- import React, {useState} from 'react';
+ import React from 'react';
  import lupa from './img/lupa.svg';
  import './styles/Search.css';
 

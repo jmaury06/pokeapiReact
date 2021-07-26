@@ -1,18 +1,10 @@
 .Container2{
 	display: flex;
-	margin-top: 20px;
-	justify-content: space-between;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 20px;
 }
 
 .subContainer1{
-	align-content: flex-start;
 	flex-basis: 70%;
-}
-
-.Element{
-	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 }
 
@@ -21,23 +13,13 @@
 	flex-direction: column;
 }
 
-.containerZ{
+.containerStats{
 	display: flex;
-}
-
-.Stats{
-	flex: 0.5;
-	flex-basis: 80%;
-}
-
-.Value{
-	flex: 0.5;
-	flex-basis: 20%;
-	text-align: end;
+	justify-content: space-between;
 }
 
 p{
-	margin: 1px;
+	margin: 1px auto;
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -45,21 +27,7 @@ p{
 	text-transform: capitalize;
 }
 
-
-
 h3{
-	margin: 1px;
-	font-family: 'Poppins', sans-serif;
+	margin: 1px auto;
 	font-size: 24px;
-	font-style: normal;
-	font-weight: bold;
-	
-}
-
-h4{
-	margin: 1px;
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
 }
